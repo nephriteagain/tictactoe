@@ -14,8 +14,9 @@ const Block = ({num, isActive, captureBlock, isPlayerOneTurn, icon}) => {
         captureBlock(num, isPlayerOneTurn, isActive)
       } }  
     >
-      {icon}
-      {num}
+      <div className='icon-container'>
+        {icon}
+      </div>
     </div>
   )
 }

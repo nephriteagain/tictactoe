@@ -109,7 +109,7 @@ function App() {
   
   const winnerDeclare = (gameState, player) => {
     if (gameState) {
-      return `player ${!player? '1': '2'} wins`
+      return `player ${!player? '1': '2'} wins!`
     }
   }
   
@@ -161,6 +161,7 @@ function App() {
 
   return (
     <div className='container'>
+      <h1 className='title'>TIC TAC TOE</h1>
       {showDrawModal && <DrawModal resetGame={resetGame}/>}
       {showModal && <Modal 
                       isGameOver={isGameOver} 

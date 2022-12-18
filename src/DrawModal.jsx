@@ -4,10 +4,11 @@ function DrawModal({resetGame}) {
   return (   
     <div className='modal-overlay'>
     <div className='modal-container'>
-        <h2>Draw!!!</h2>
+        <div className='draw-container'>
+        <h2 className='draw'>Draw!!!</h2>
         <button className='btn' onClick={resetGame}>Restart game</button>
+        </div>
     </div>
-
     </div>
     )
 }
